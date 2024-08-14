@@ -4,7 +4,7 @@
   background-position: center; */
   /* background-image: linear-gradient(to left bottom, red,  transparent); */
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url(images/freedom.jpg) left 10% bottom 80% / cover no-repeat border-box,
+    url(images/freedom.jpg) center / cover no-repeat border-box,
     linear-gradient(red, lightblue);
 
   width: 100%;
@@ -23,16 +23,6 @@
   font-size: 1.6rem;
 }
 
-@media (max-width: 40rem) {
-  #product-overview {
-    height: 40vh;
-  }
-
-  #product-overview h1 {
-    font-size: 2rem;
-  }
-}
-
 .section-title {
   color: #2ddf5c;
   text-align: center;
@@ -49,9 +39,11 @@
   text-align: center;
   padding: 1rem;
   margin: 0.5rem;
-  display: inline-block;
   width: 30%;
+  display: inline-block;
   vertical-align: middle;
+  min-width: 13.125rem;
+  max-width: 25rem;
 }
 
 .plan--highlighted {
@@ -183,4 +175,28 @@
 .modal__action--negative:active {
   background: #ff5454;
   border-color: #ff5454;
+}
+
+@media (max-width: 63rem) {
+  #product-overview {
+    height: 40vh;
+  }
+
+  #product-overview h1 {
+    font-size: 2rem;
+  }
+
+  .plan {
+    background: lightgreen;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 100%;
+  }
+
+  .plan--highlighted {
+    background: rgb(0, 122, 0);
+    color: white;
+    box-shadow: none; /*2px 2px 2px 2px rgba(0, 0, 0, 0.34);*/
+  }
 }
