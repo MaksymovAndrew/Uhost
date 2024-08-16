@@ -215,3 +215,38 @@
     margin-top: 4rem;
   }
 }
+
+@media (min-width: 40rem) and (max-width: 57rem) {
+  .plan__list {
+    width: 100%;
+    margin: 0 auto; 
+    text-align: center;
+  }
+  .plan {
+    display: block;
+    background: lightgreen;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+  }
+
+  .plan--highlighted {
+    background: rgb(0, 122, 0);
+    color: white;
+    box-shadow: none; /*2px 2px 2px 2px rgba(0, 0, 0, 0.34);*/
+  }
+
+  .good-reasons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .good-reason {
+    display: block;
+    width: 100%;
+  }
+}
