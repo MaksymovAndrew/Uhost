@@ -58,6 +58,25 @@ body {
   vertical-align: middle;
 }
 
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.button:hover,
+.button:active {
+  background-color: rgb(184, 253, 184);
+  color: black;
+  border-bottom: 5px, solid, black;
+}
+
 .main__a img {
   height: 100%;
 }
