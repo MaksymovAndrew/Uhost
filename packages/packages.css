@@ -1,3 +1,8 @@
+/* @font-face {
+  font-family: manrope;
+  src: url(manrope-Bold.ttf) format(truetype);
+} */
+
 main {
   padding-top: 2rem;
 }
@@ -111,7 +116,7 @@ main {
   padding: 1.4rem;
   margin: 0.8rem;
   border: 2px solid black;
-  color: darkgreen;
+  color: rgb(0, 68, 0);
   font-size: 1.4rem;
   font-weight: 500;
 }

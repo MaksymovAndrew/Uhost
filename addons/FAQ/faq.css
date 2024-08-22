@@ -1,0 +1,78 @@
+/* faq.css */
+
+/* Hero секция для страницы FAQ */
+.faq-hero-section {
+  background: linear-gradient(90deg, #2dbcdf, #c2ed00);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.faq-hero-section h1 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Основные секции FAQ */
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+}
+
+.faq-item h2 {
+  font-size: 1.8rem;
+  color: #c2ed00;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.faq-item a {
+  color: #2dbcdf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.faq-item a:hover,
+.faq-item a:active {
+  color: #0e4f1f;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 40rem) {
+  .faq-hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .faq-section {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .faq-item h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq-item p {
+    font-size: 1rem;
+  }
+}
