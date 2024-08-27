@@ -57,6 +57,10 @@ body {
   vertical-align: middle;
 }
 
+.toggle-button {
+  display: none;
+}
+
 .button {
   background: #0e4f1f;
   color: white;
@@ -188,18 +192,13 @@ body {
   color: gray;
 }
 
-/* @media (min-width: 40rem) {
-  .toggle-button {
-    display: none;
-  }
-} */
 @media (max-width: 40rem) {
   .main-nav {
     display: none;
   }
 
   .toggle-button {
-    display: inline-block; 
+    display: inline-block;
     width: 3rem;
     background: transparent;
     border: none;

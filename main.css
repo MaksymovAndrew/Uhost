@@ -27,9 +27,9 @@
 }
 
 .plan__list {
-  width: 100%;
-  margin: auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .plan {
@@ -42,11 +42,13 @@
   vertical-align: middle;
   min-width: 13.125rem;
   max-width: 25rem;
+  height: 23rem;
 }
 
 .plan--highlighted {
   background: rgb(0, 122, 0);
   color: white;
+  height: 25rem;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
 }
 
@@ -97,16 +99,15 @@
 }
 
 .good-reasons {
+  display: flex;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
-  vertical-align: top;
 }
 
 .good-reason {
-  display: inline-block;
-  width: 30%;
+  width: 100%;
 }
 
 .good-reason_description {
@@ -175,6 +176,40 @@
   border-color: #ff5454;
 }
 
+@media (min-width: 40rem) and (max-width: 57rem) {
+  .plan__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plan {
+    background: lightgreen;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 100%;
+  }
+
+  .plan--highlighted {
+    background: rgb(0, 122, 0);
+    color: white;
+    box-shadow: none; /*2px 2px 2px 2px rgba(0, 0, 0, 0.34);*/
+  }
+
+  .good-reasons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .good-reason {
+    width: 100%;
+  }
+}
+
 @media (max-width: 40rem) {
   #product-overview {
     height: 40vh;
@@ -185,50 +220,18 @@
     background: center;
   }
 
-  .plan {
-    background: lightgreen;
-    text-align: center;
-    padding: 1rem;
-    margin: 0.5rem;
-    width: 90%;
-  }
-
-  .plan--highlighted {
-    background: rgb(0, 122, 0);
-    color: white;
-    box-shadow: none; /*2px 2px 2px 2px rgba(0, 0, 0, 0.34);*/
-  }
-
-  .good-reasons {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    vertical-align: top;
-  }
-
-  .good-reason {
-    display: block;
-    width: 100%;
-  }
-  #product-overview {
-    margin-top: 4rem;
-  }
-}
-
-@media (min-width: 40rem) and (max-width: 57rem) {
   .plan__list {
-    width: 100%;
-    margin: 0 auto; 
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .plan {
-    display: block;
     background: lightgreen;
-    text-align: center;
     padding: 1rem;
     margin: 1rem auto;
-    width: 90%;
+    width: 100%;
   }
 
   .plan--highlighted {
@@ -238,15 +241,12 @@
   }
 
   .good-reasons {
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    vertical-align: top;
   }
 
-  .good-reason {
-    display: block;
-    width: 100%;
+  #product-overview {
+    margin-top: 4rem;
   }
 }
