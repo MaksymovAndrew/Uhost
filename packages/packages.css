@@ -31,6 +31,7 @@ main {
   width: 70%;
   padding: 0px 1.4rem 2rem 1.4rem;
   z-index: 1;
+  overflow: hidden;
 }
 
 .section-plus:hover {
@@ -40,14 +41,17 @@ main {
 
 .recommendent__plan {
   position: absolute;
-  margin: 1.2rem;
   right: 0;
   top: 0;
   font-size: 0.8rem;
-  color: white;
+  color: rgb(255, 255, 255);
   background: #ff5454;
   padding: 0.5rem;
   z-index: 10;
+  transform: rotateZ(45deg) translateX(3rem) translateY(-1rem);
+  transform-origin: center;
+  width: 12rem;
+  text-align: center;
 }
 
 .section-free {
