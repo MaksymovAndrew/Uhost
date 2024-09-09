@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>uHost Signup</title>
     <link rel="shortcut icon" href="../images/start-hosting.png" />
-    <link rel="stylesheet" href="../shared/shared.css" />
     <link rel="stylesheet" href="start-hosting.css" />
+    <link rel="stylesheet" href="../shared/shared.css" />
+    <script src="start-hosting.js" defer></script>
     <script src="../shared/shared.js" defer></script>
   </head>
 
@@ -63,15 +64,15 @@
           <option value="ms">Ms.</option>
         </select>
         <label for="first-name">First name</label>
-        <input type="text" id="first-name" />
+        <input type="text" id="first-name" required />
         <label for="last-name">Last name</label>
-        <input type="text" id="last-name" />
+        <input type="text" id="last-name" required />
         <label for="email">E-Mail</label>
-        <input type="email" id="email" />
+        <input type="email" id="email" required />
         <label for="password">Password</label>
-        <input type="password" id="password" />
+        <input type="password" id="password" required />
         <div class="signup-form__checkbox">
-          <input type="checkbox" id="agree-terms" />
+          <input type="checkbox" id="agree-terms" required/>
           <label for="agree-terms"
             >Agree to
             <a href="../addons/terms/index.html">Terms &amp; Conditions</a>
@@ -92,5 +93,9 @@
         </ul>
       </nav>
     </footer>
+    <div class="modal">
+      <p>You have successfully registered!</p>
+      <button class="button button--modal">Okay</button>
+    </div>
   </body>
 </html>
