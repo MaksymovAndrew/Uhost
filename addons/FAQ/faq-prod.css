@@ -1,11 +1,14 @@
 .faq-hero-section {
+  background: -webkit-gradient(linear, left top, right top, from(#2dbcdf), to(#c2ed00));
+  background: -o-linear-gradient(left, #2dbcdf, #c2ed00);
   background: linear-gradient(90deg, #2dbcdf, #c2ed00);
   color: white;
   text-align: center;
   padding: 4rem 2rem;
   margin-bottom: 3rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .faq-hero-section h1 {
@@ -22,7 +25,8 @@
   padding: 2rem;
   background-color: #f7f7f7;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item {
@@ -51,6 +55,8 @@
 .faq-item a:active {
   color: #0e4f1f;
   text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 

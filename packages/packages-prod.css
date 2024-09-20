@@ -1,0 +1,230 @@
+main {
+  padding-top: 2rem;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.background {
+  background: url("../images/plans-background.jpg") center/cover;
+  -webkit-filter: grayscale(30%);
+  filter: grayscale(30%);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+
+.section-plus {
+  position: relative;
+  margin-top: 5rem;
+  background: rgba(144, 238, 144, 0.76);
+  border: 4px solid rgb(0, 68, 0);
+  -webkit-transition: border-color 0.4s ease-in-out;
+  -o-transition: border-color 0.4s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  border-left: 0;
+  width: 70%;
+  padding: 0px 1.4rem 2rem 1.4rem;
+  z-index: 1;
+  overflow: hidden;
+  /* animation: push-down 0.4s ease-in-out forwards; */
+}
+
+.section-plus:hover {
+  border-color: red;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  -webkit-animation: push-up 0.4s ease-in-out forwards;
+  animation: push-up 0.4s ease-in-out forwards;
+}
+
+.section-plus.animate-hover:hover {
+  border-color: red;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  -webkit-animation: push-up 0.4s ease-in-out forwards;
+  animation: push-up 0.4s ease-in-out forwards; /* Анимация вверх */
+}
+
+.section-plus.animate-hover:not(:hover) {
+  -webkit-animation: push-down 0.4s ease-in-out forwards;
+  animation: push-down 0.4s ease-in-out forwards; /* Анимация вниз */
+}
+
+.section-free {
+  position: relative;
+  margin-top: 1.4rem;
+  background: rgba(185, 255, 185, 0.776);
+  border: 4px solid rgb(0, 68, 0);
+  -webkit-transition: border-color 0.4s ease-in-out;
+  -o-transition: border-color 0.4s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  border-right: 0;
+  padding: 0px 1.4rem 2rem 1.4rem;
+  float: right;
+  text-align: right;
+  /* animation: push-down 0.4s ease-in-out forwards; */
+}
+
+.section-free:hover {
+  border-color: red;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  -webkit-animation: push-up 0.4s ease-in-out forwards;
+  animation: push-up 0.4s ease-in-out forwards;
+}
+
+.section-free.animate-hover:hover {
+  border-color: red;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  -webkit-animation: push-up 0.4s ease-in-out forwards;
+  animation: push-up 0.4s ease-in-out forwards; /* Анимация вверх */
+}
+
+.section-free.animate-hover:not(:hover) {
+  -webkit-animation: push-down 0.4s ease-in-out forwards;
+  animation: push-down 0.4s ease-in-out forwards; /* Анимация вниз */
+}
+
+.section-premium {
+  position: relative;
+  margin-top: 1.4rem;
+  background: rgba(0, 100, 0, 0.968);
+  border: 4px solid rgb(0, 68, 0);
+  -webkit-transition: border-color 0.4s ease-in-out;
+  -o-transition: border-color 0.4s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  border-left: 0;
+  width: 70%;
+  padding: 0px 1.4rem 2rem 1.4rem;
+}
+
+.section-premium.animate-hover:hover {
+  border-color: red;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.34);
+  -webkit-animation: push-up 0.4s ease-in-out forwards;
+  animation: push-up 0.4s ease-in-out forwards; /* Анимация вверх */
+}
+
+.section-premium.animate-hover:not(:hover) {
+  -webkit-animation: push-down 0.4s ease-in-out forwards;
+  animation: push-down 0.4s ease-in-out forwards; /* Анимация вниз */
+}
+
+.recommendent__plan {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  background: #ff5454;
+  padding: 0.5rem;
+  z-index: 10;
+  -webkit-transform: rotateZ(45deg) translateX(3rem) translateY(-1rem);
+  -ms-transform: rotate(45deg) translateX(3rem) translateY(-1rem);
+  transform: rotateZ(45deg) translateX(3rem) translateY(-1rem);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  width: 12rem;
+  text-align: center;
+}
+
+.section__a {
+  text-decoration: none;
+  margin-left: 1.4rem;
+}
+
+.section__h1 {
+  margin-left: 1.4rem;
+  color: black;
+}
+
+.section__h1-premium {
+  margin-left: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+
+.section__h2 {
+  margin-left: 1.4rem;
+  color: gray;
+}
+
+.section__h2-premium {
+  margin-left: 1.4rem;
+  color: rgb(214, 214, 214);
+}
+
+.section__p {
+  margin-left: 1.6rem;
+  background: white;
+  padding: 1.4rem;
+  margin: 0.8rem;
+  border: 2px solid black;
+  color: rgb(0, 68, 0);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@-webkit-keyframes push-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1.2rem);
+    transform: translateY(-1.2rem);
+  }
+}
+
+@keyframes push-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1.2rem);
+    transform: translateY(-1.2rem);
+  }
+}
+
+@-webkit-keyframes push-down {
+  0% {
+    -webkit-transform: translateY(-1.2rem);
+    transform: translateY(-1.2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes push-down {
+  0% {
+    -webkit-transform: translateY(-1.2rem);
+    transform: translateY(-1.2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

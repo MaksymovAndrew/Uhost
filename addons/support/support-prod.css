@@ -1,10 +1,19 @@
 .hero-section {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#2ddf5c),
+    to(#2dbcdf)
+  );
+  background: -o-linear-gradient(left, #2ddf5c, #2dbcdf);
   background: linear-gradient(to right, #2ddf5c, #2dbcdf);
   color: white;
   text-align: center;
   padding: 4rem 2rem;
   margin-bottom: 2rem;
   border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -20,6 +29,7 @@
   background-color: #ffffff;
   border-radius: 12px;
   max-width: 800px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,6 +50,8 @@
 .support-section a {
   color: #2dbcdf;
   text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
